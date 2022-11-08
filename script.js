@@ -12,12 +12,12 @@ let prezzoScontatoViaggio;
 
 btnGenera.addEventListener('click', function () {
     document.getElementById('output-nome').innerHTML = nome.value;
-    if (etaPasseggero < 18) {
+    if (etaPasseggero == "minorenne") {
         prezzoScontatoViaggio = (prezzoViaggio - (prezzoViaggio * 0.2)).toFixed(2);
         document.getElementById('outputBiglietto').innerHTML = prezzoScontatoViaggio + ' &euro;';
         document.getElementById('output-offerta').innerHTML = 'Biglietto scontato';
     }
-    else if (etaPasseggero >= 65) {
+    else if (etaPasseggero == "over65") {
         prezzoScontatoViaggio = (prezzoViaggio - (prezzoViaggio * 0.4)).toFixed(2);
         document.getElementById('outputBiglietto').innerHTML = prezzoScontatoViaggio + ' &euro;';
         document.getElementById('output-offerta').innerHTML = 'Biglietto scontato';
@@ -33,7 +33,7 @@ btnGenera.addEventListener('click', function () {
 btnAnnulla.addEventListener('click', function () {
     document.getElementById('name').value = "";
     document.getElementById('km-da-percorrere').value = "";
-    document.getElementById('eta-passeggero').value = "";
+    document.getElementById('eta-passeggero').value = "minorenne";
     document.getElementById('output-carrozza').innerHTML = "";
     document.getElementById('output-codice-cp').innerHTML = ""; document.getElementById('outputBiglietto').innerHTML = "";
     document.getElementById('output-nome').innerHTML = "";
