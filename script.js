@@ -22,6 +22,7 @@ btnGenera.addEventListener('click', function () {
         document.getElementById('outputBiglietto').innerHTML = prezzoScontatoViaggio + ' &euro;';
         document.getElementById('output-offerta').innerHTML = 'Biglietto scontato';
     } else {
+        prezzoViaggio = (prezzoViaggio).toFixed(2);
         document.getElementById('outputBiglietto').innerHTML = prezzoViaggio + ' &euro;';
     };
     document.getElementById('output-carrozza').innerHTML = Math.floor(Math.random() * 20) + 1;
