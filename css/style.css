@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: #ba1450;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color: white;
+    margin-top: 50px;
+}
+.dati-biglietto{
+    background-color: white;
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+}
+#domande-form{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    color: #ba1450;
+}
+#domande-form input{
+    border-color: #ba1450;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
+.dati-biglietto button{
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ba1450;
+    border-radius: 3px;
+    margin-right: 10px;
+    border-color: #f2a15a;
+}
+
+.dettaglio-biglietto {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+padding: 25px ;
+text-align: start
+}
+.dati-biglietto h3{
+    text-align: start;
+}
+.dettagli-passeggero{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+.nome-passeggero{
+    background-color: #808080;
+    width: 400px;
+    padding: 20px;
+}
